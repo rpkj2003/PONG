@@ -36,12 +36,14 @@ body {
 
 #left-paddle {
   background-color: yellow;
-  left: 10px;
+  left: 0; /* Keep within the #game container */
+  margin-left: 10px; /* Add margin to position correctly */
 }
 
 #right-paddle {
   background-color: black;
-  right: 10px;
+  right: 0; /* Keep within the #game container */
+  margin-right: 10px; /* Add margin to position correctly */
 }
 
 .ball {
