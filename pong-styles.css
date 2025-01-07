@@ -23,6 +23,7 @@ body {
   background-size: cover;
   width: 400px;
   height: 300px;
+  overflow: hidden; /* Prevent elements from overflowing the game area */
 }
 
 #left-paddle,
@@ -36,14 +37,12 @@ body {
 
 #left-paddle {
   background-color: yellow;
-  left: 0; /* Keep within the #game container */
-  margin-left: 10px; /* Add margin to position correctly */
+  left: 10px; /* Ensure paddle stays within bounds */
 }
 
 #right-paddle {
   background-color: black;
-  right: 0; /* Keep within the #game container */
-  margin-right: 10px; /* Add margin to position correctly */
+  right: 10px; /* Ensure paddle stays within bounds */
 }
 
 .ball {
