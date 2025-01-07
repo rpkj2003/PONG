@@ -23,7 +23,7 @@ body {
   background-size: cover;
   width: 400px;
   height: 300px;
-  overflow: hidden; /* Prevent elements from overflowing the game area */
+  overflow: hidden; /* Ensures paddles and ball cannot go outside the box */
 }
 
 #left-paddle,
@@ -31,18 +31,20 @@ body {
   width: 5px;
   height: 50px;
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
 }
 
 #left-paddle {
   background-color: yellow;
-  left: 10px; /* Ensure paddle stays within bounds */
+  left: 10px; /* Stay within bounds */
+  top: 50%;
+  transform: translateY(-50%); /* Start centered */
 }
 
 #right-paddle {
   background-color: black;
-  right: 10px; /* Ensure paddle stays within bounds */
+  right: 10px; /* Stay within bounds */
+  top: 50%;
+  transform: translateY(-50%); /* Start centered */
 }
 
 .ball {
