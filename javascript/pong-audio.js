@@ -54,7 +54,7 @@ soundArray.push(paddleSound);
 export var scoreSound = new soundFile("Score sound.mp3");
 soundArray.push(scoreSound);
 
-export var ambientSound = new soundFile("PONG Music.mp3");
+export var ambientSound = new soundFile("PONG Music Slow.mp3");
 soundArray.push(ambientSound);
 ambientSound.player.loop = true; // Turn on looping
 ambientSound.player.volume.value = 0; // Reset volume to normal (0 dB)
